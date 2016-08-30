@@ -23,7 +23,9 @@ defmodule Ex04 do
 
   """
 
-  def reduce . . . «your code»
+  def reduce([ h | t ],  func),        do: reduce(t, h, func)
+  def reduce([ ], state, _func),       do: state
+  def reduce([ h | t ], state, func),  do: reduce(t, func.(h, state), func)
 
 
   ##############################################################################
