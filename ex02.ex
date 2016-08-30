@@ -1,0 +1,62 @@
+ExUnit.start
+
+defmodule Ex02 do
+  use ExUnit.Case
+
+  ##############################################################################
+  # 2: 3 questions,  15 points available
+  ##############################################################################
+
+  # These exercises manipulate lists using anonymous functions.
+  # Replace the text
+  #
+  #      « your code goes here »
+  #
+  # with your solution. Note that even though the «your code...» placeholder
+  # takes just one line, your solution may take several.
+  #
+  # You can test your answers by running:
+  #
+  #     elixir ex02.ex
+
+
+  ##################
+  # 2.1:  5 points #
+  ########################################################################
+  # Write an anonymous function that takes two numbers and returns a two #
+  # element list. The first element of the list will be the sum of the   #
+  # numbers, and second should be the difference                         #
+  ########################################################################
+
+  list2a = «your code»
+
+  assert list2a.(1, 2)    == [ 3, -1 ]
+  assert list2a.(-1, 100) == [ 99, -101 ]
+
+  ##################
+  # 2.2:  5 points #
+  ##################################
+  # Do the same using the & syntax #
+  ##################################
+
+  list2b = «your code»
+
+  assert list2b.(1, 2)    == [ 3, -1 ]
+  assert list2b.(-1, 100) == [ 99, -101 ]
+
+  ##################
+  # 2.3:  5 points #
+  ################################################################
+  # Write a function that uses pattern matching to return true   #
+  # if the first two elements of a list are equal                #
+  ################################################################
+
+  first2equal = «your code»
+
+
+  assert  first2equal.([4, 4, 5, 6, 7])
+  assert !first2equal.([4, 5, 6, 7, 8])
+
+end
+
+
