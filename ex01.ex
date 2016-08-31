@@ -1,7 +1,9 @@
 ExUnit.start
+Code.load_file "support.ex"
 
 defmodule Ex01 do
   use ExUnit.Case
+  import Support
 
   ##############################################################################
   # 1: 5 questions,  30 points available                                       #
@@ -34,7 +36,7 @@ defmodule Ex01 do
   # Write a function that adds two numbers using fn syntax #
   ##########################################################
 
-  sum2a = «your code»
+  sum2a = your_anonymous_function(1, 2)
 
   assert sum2a.(1, 2)    == 3
   assert sum2a.(-1, 100) == 99
@@ -45,7 +47,7 @@ defmodule Ex01 do
   # Write a function that adds two numbers using & syntax  #
   ##########################################################
 
-  sum2b = «your code»
+  sum2b = your_anonymous_function(1, 2)
 
   assert sum2b.(1, 2)    == 3
   assert sum2b.(-1, 100) == 99
@@ -58,7 +60,7 @@ defmodule Ex01 do
   # no explicit + operators in your function                          #
   #####################################################################
 
-  sum3a = «your code»
+  sum3a = your_anonymous_function(1, 2, 3)
 
   assert sum3a.(1, 3, 5)  == 9
   assert sum3a.(1, -3, 5) == 3
@@ -69,7 +71,7 @@ defmodule Ex01 do
   # Do the same using the & notation #
   ####################################
 
-  sum3b = «your code»
+  sum3b = your_anonymous_function
 
   assert sum3b.(1, 3, 5)  == 9
   assert sum3b.(1, -3, 5) == 3
@@ -84,7 +86,7 @@ defmodule Ex01 do
   # function. The examples below will make this clearer :)               #
   ########################################################################
 
-  create_adder = «your code»
+  create_adder = your_anonymous_function(1)
 
   add_2  = create_adder.(2)
   add_99 = create_adder.(99)

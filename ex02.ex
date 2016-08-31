@@ -1,7 +1,9 @@
 ExUnit.start
+Code.load_file "support.ex"
 
 defmodule Ex02 do
   use ExUnit.Case
+  import Support
 
   ##############################################################################
   # 2: 3 questions,  15 points available
@@ -10,9 +12,9 @@ defmodule Ex02 do
   # These exercises manipulate lists using anonymous functions.
   # Replace the text
   #
-  #      « your code goes here »
+  #      your_anonymous_function(...)
   #
-  # with your solution. Note that even though the «your code...» placeholder
+  # with your solution. Note that even though the placeholder
   # takes just one line, your solution may take several.
   #
   # You can test your answers by running:
@@ -28,7 +30,7 @@ defmodule Ex02 do
   # numbers, and second should be the difference                         #
   ########################################################################
 
-  list2a = «your code»
+  list2a = your_anonymous_function(1, 2)
 
   assert list2a.(1, 2)    == [ 3, -1 ]
   assert list2a.(-1, 100) == [ 99, -101 ]
@@ -39,7 +41,7 @@ defmodule Ex02 do
   # Do the same using the & syntax #
   ##################################
 
-  list2b = «your code»
+  list2b = your_anonymous_function(1, 2)
 
   assert list2b.(1, 2)    == [ 3, -1 ]
   assert list2b.(-1, 100) == [ 99, -101 ]
@@ -51,7 +53,7 @@ defmodule Ex02 do
   # if the first two elements of a list are equal                #
   ################################################################
 
-  first2equal = «your code»
+  first2equal = your_anonymous_function([])
 
 
   assert  first2equal.([4, 4, 5, 6, 7])

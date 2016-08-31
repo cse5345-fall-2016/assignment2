@@ -7,7 +7,9 @@ Each contains an exercise to be completed. In each exercise there's a
 description of an *anonymous* or *named function* to be written, and
 some code.
 
-You'll write your function where is says `«your code»`.
+You'll write your anonymous function where is says `your_anonymous_function(..)`.
+
+You'll write your named function where is says `"your code"`.
 
 In ex01 and ex02, tests are included below where you write your code:
 
